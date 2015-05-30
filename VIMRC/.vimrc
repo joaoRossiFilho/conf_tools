@@ -14,8 +14,9 @@ set showcmd
 set nocompatible              " vim, not vi
 set autoindent smartindent    " auto/smart indent
 set smarttab                  " tab and backspace are smart
-set tabstop=2                 " 6 spaces
-set shiftwidth=2
+set tabstop=4                 " 4 spaces
+set shiftwidth=4							" 4 spaces ident
+set noexpandtab								" 1 tab - no space chars
 set scrolloff=5               " keep at least 5 lines above/below
 set sidescrolloff=5           " keep at least 5 lines left/right
 set history=200
@@ -62,3 +63,9 @@ endif
 nmap <LocalLeader>tl :set list!<cr>
 " toggle paste mode
 nmap <LocalLeader>pp :set paste!<cr>
+
+map <F11> :tabp <CR>
+map! <F11> :tabp <CR>
+
+map <F12> :tabn <CR>
+map! <F12> :tabn <CR>
